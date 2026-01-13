@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divine Reiki Healing Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Divine Reiki Healing Foundation offers Reiki Level 1, 2, 3 & 3B training. Learn authentic Reiki healing with Ratandeep Singh.">
+  <meta name="keywords" content="Reiki Healing, Reiki Training, Reiki Level 1, Reiki Level 2, Reiki Master, Reiki Teacher">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f6f3fb;
+      color: #333;
+    }
+
+    /* NAV */
+    nav {
+      background: #6a3dbd;
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    header {
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1518611012118-f0c5f1a9f6a1");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 32px;
+      background: #6a3dbd;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #6a3dbd;
+      margin-bottom: 40px;
+    }
+
+    /* COURSES */
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 25px;
+    }
+
+    .course {
+      background: linear-gradient(135deg, #6a3dbd, #8e6cd1);
+      color: #fff;
+      padding: 28px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    .course button {
+      margin-top: 15px;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 20px;
+      background: #fff;
+      color: #6a3dbd;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* FOUNDER */
+    .founder {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .founder img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    }
+
+    .founder p {
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,.15);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #6a3dbd;
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 12px;
+      background: #ffd700;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #4b2c91;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 16px;
+      border-radius: 50%;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    }
+
+    @media(max-width:768px){
+      .founder { grid-template-columns: 1fr; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#founder">Founder</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <img src="logo.png" class="logo" alt="Divine Reiki Healing Foundation">
+  <p>Welcome to</p>
+  <h1>Divine Reiki Healing Foundation</h1>
+  <p>Transform Your Life with Reiki Energy</p>
+  <a href="#courses" class="btn">Learn More</a>
+</header>
+
+<section id="courses">
+  <h2 class="title">Our Courses</h2>
+  <div class="courses">
+    <div class="course">Reiki Level 1<br>Duration: 2 Days<button>Learn More</button></div>
+    <div class="course">Reiki Level 2<br>Duration: 2 Days<button>Learn More</button></div>
+    <div class="course">Reiki Level 3 (Master)<br>Duration: 2 Days<button>Learn More</button></div>
+    <div class="course">Reiki Level 3B (Teacher)<br>Duration: 2 Days<button>Learn More</button></div>
+  </div>
+</section>
+
+<section id="founder">
+  <h2 class="title">About the Founder</h2>
+  <div class="founder">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+    <div>
+      <h3>Ratandeep Singh</h3>
+      <p>
+        “Reiki is not just a healing technique, it is a way of life.
+        My mission is to guide you on your journey to inner peace
+        and spiritual growth.”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="title">Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
+    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+    <img src="https://images.unsplash.com/photo-1525097487452-6278ff080c31">
+    <img src="https://images.unsplash.com/photo-1518611012118-f0c5f1a9f6a1">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-box">
+    <h2 class="title" style="color:white;">Contact Us</h2>
+    <p>📞 Call / WhatsApp: <strong>7718803099</strong><br>
+       📧 Email: <strong>ratanmokha@gmail.com</strong></p>
+
+    <form action="https://formsubmit.co/ratanmokha@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917718803099" target="_blank">💬</a>
+
+<footer>
+  © 2026 Divine Reiki Healing Foundation
+</footer>
+
+</body>
+</html>
