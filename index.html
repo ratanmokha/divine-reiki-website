@@ -223,27 +223,34 @@
 
     @media(max-width:768px){
       .founder { grid-template-columns: 1fr; text-align: center; }
-      .nav-links {
+     .nav-links {
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
+    gap:0;
     background: #6a3dbd;
     flex-direction: column;
     align-items: center;
-    display: none;
-    padding: 20px 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
   }
 
   .nav-links a {
-    border-top: 1px solid #fefefe;
-    width: 100%;
-    padding-top: 14px;
-    margin: 0;
+         padding: 14px 0;
+        border-top: 1px solid #fefefe;
+        width: 100%;
+  }
+   .nav-links a:hover {
+         padding: 14px 0;
+        border-top: 1px solid #fefefe;
+        width: 100%;
+        background-color: rgba(168,180,243,.2);
   }
 
   .nav-links.active {
-    display: flex;
+    max-height: 300px; /* Adjust if needed */
   }
 
   .menu-toggle {
@@ -377,6 +384,13 @@
 
   menu.addEventListener("click", function() {
     navLinks.classList.toggle("active");
+
+    // Change icon when open
+    if (navLinks.classList.contains("active")) {
+      menu.innerHTML = "✖";
+    } else {
+      menu.innerHTML = "☰";
+    }
   });
 </script>
 </body>
